@@ -41,7 +41,13 @@
     console.log(p);
     console.dir(p);
     // Grouping together
+    dogs.forEach(element => {
+        console.group(`${element.name}`);
+        console.log(`This is ${element.name}`);
+        console.log(`${element.name} is ${element.age*7} dog years old`);
+        console.groupEnd(`${element.name}`);
 
+    });
     // counting
 
     // timing
